@@ -8,6 +8,7 @@ import { connectDatabase } from './config/database.js';
 
 const app = express();
 const port = Number(process.env.PORT ?? 8000);
+// Use the forwarded API URL in Codespaces and localhost during local development.
 const codespaceName = process.env.CODESPACE_NAME;
 export const baseUrl = codespaceName
   ? `https://${codespaceName}-8000.app.github.dev`
