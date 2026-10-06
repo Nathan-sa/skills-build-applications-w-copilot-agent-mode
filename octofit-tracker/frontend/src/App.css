@@ -1,0 +1,137 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-navbar {
+  background: #143a35;
+  box-shadow: 0 2px 12px rgb(17 48 43 / 15%);
+}
+
+.app-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.app-navbar .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.app-navigation {
+  gap: 0.25rem;
+}
+
+.app-navigation .nav-link {
+  color: rgb(255 255 255 / 76%);
+  border-radius: 0.5rem;
+  padding-inline: 0.8rem;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.app-navigation .nav-link:hover,
+.app-navigation .nav-link.active {
+  color: #fff;
+  background: rgb(255 255 255 / 14%);
+}
+
+.app-content {
+  flex: 1;
+  padding-block: clamp(2rem, 6vw, 4rem);
+}
+
+.resource-heading {
+  margin-bottom: 1.75rem;
+}
+
+.resource-eyebrow {
+  color: #267866;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.resource-title {
+  margin: 0.25rem 0 0;
+  color: #183b35;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.resource-description {
+  margin-top: 0.5rem;
+  color: #667771;
+}
+
+.resource-card {
+  overflow: hidden;
+  border: 1px solid #e4ece8;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 12px 32px rgb(29 68 59 / 7%);
+}
+
+.resource-table {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.resource-table thead th {
+  padding: 1rem 1.25rem;
+  color: #65756f;
+  background: #f5f8f6;
+  border-bottom-color: #e4ece8;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.resource-table tbody td {
+  padding: 1rem 1.25rem;
+  color: #344840;
+}
+
+.resource-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.resource-state {
+  padding: 2.5rem 1.5rem;
+  color: #65756f;
+  text-align: center;
+}
+
+.resource-state .spinner-border {
+  color: #267866;
+}
+
+.app-footer {
+  padding-block: 1.25rem;
+  color: #dbe9e3;
+  background: #143a35;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 991.98px) {
+  .app-navbar .container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .app-navigation {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    overflow-x: auto;
+  }
+
+  .app-navigation .nav-link {
+    white-space: nowrap;
+  }
+}
